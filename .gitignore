@@ -347,3 +347,6 @@ $RECYCLE.BIN/
 
 # Django, docker private settings
 *.env
+
+# certbot related files
+certbot/

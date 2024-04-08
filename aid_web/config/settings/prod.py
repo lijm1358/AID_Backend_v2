@@ -3,7 +3,7 @@ from .base import *  # noqa
 
 # TODO: production용 allowed host 설정
 # TODO: user uploaded media file. https://docs.djangoproject.com/en/4.1/topics/security/#user-uploaded-content
-ALLOWED_HOSTS = ["backend.pnuaid.com"]
+ALLOWED_HOSTS = ["pnuaid.com"]
 
 CSRF_TRUSTED_ORIGINS = ["https://*.pnuaid.com/", "https://*.pnuaid.com/admin", "https://*.127.0.0.1"]
 

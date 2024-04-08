@@ -23,6 +23,9 @@ Test 환경 : PostgreSQL database 서버 및 Django 모두 docker로 실행
 - `nginx`
   - test, production 환경에서만 사용(이후 https 연결 및 load balancing 등의 기능을 위해)
   - `./config/nginx.test.conf` 및 `nginx.prod.conf`의 nginx conf 파일을 사용
+- `certbot`
+  - 무료 https 인증서 발급용(이후 변경 가능)
+  - entrypoint를 이용, 갱신 필요시 인증서 재발급
 - PostgreSQL environment variable(env에서 확인)
   - `POSTGRES_USER` : PostgreSQL에 접속할 사용자(지정하지 않으면 `postgres`사용.)
   - `POSTGRES_PASSWORD` : PostgreSQL 비밀번호
